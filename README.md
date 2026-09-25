@@ -69,12 +69,24 @@ npm run dev
 
 ### 4. Production Build & Run
 ```bash
-# Build the Vite frontend
+# Build both frontend and backend
 npm run build
 
-# Start the Express production server
+# Start the Express production server locally
 npm start
 ```
+
+### 5. cPanel / Production Deployment Packaging
+Run the deployment script to create a standalone, production-ready bundle:
+```bash
+chmod +x deploy.sh
+./deploy.sh
+# or
+npm run deploy
+```
+This script compiles the TypeScript backend to JavaScript, builds the React frontend, strips devDependencies, and produces:
+- `deploy/`: directory ready to upload
+- `deploy/deploy.zip`: archive for 1-click upload and extract in cPanel File Manager
 
 ---
 

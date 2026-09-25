@@ -16,6 +16,9 @@ dist/
 dist-server/
 client/dist/
 build/
+deploy/
+*.zip
+.deploy-tmp.*
 
 # Logs
 logs/
